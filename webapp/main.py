@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 # Download a model from Hugging Face
 generator = pipeline(
-    "text-generation", model="databricks/dolly-v2-12b", use_auth_token=True
+    "text-generation", model="databricks/dolly-v2-3b", use_auth_token=True
 )
 
 app = FastAPI()
