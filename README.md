@@ -3,7 +3,7 @@
 
 # 🤗 Hugging Face model packaging using GitHub Container Registry
 
-A web application uses FastAPI with GPT-2 model sourced from Hugging Face and exposes a single endpoint that you can interact with it.
+A web application uses FastAPI with Databricks' dolly-v2-12b model sourced from Hugging Face and exposes a single endpoint that you can interact with it.
 
 # Instructions to access the app in local docker container
 1. Install docker in local machine if not already installed. For debian version, follow instruction in this [link](https://docs.docker.com/engine/install/debian/#install-using-the-repository)
