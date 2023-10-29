@@ -3,7 +3,8 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
-# Download a model from Hugging Face
+# Download a model from Hugging Face 
+# Note: log into Hugging Face CLI using huggingface-cli login --token $HUGGINGFACE_TOKEN
 generator = pipeline(
     "text-generation", model="databricks/dolly-v2-3b", use_auth_token=True
 )
@@ -15,7 +16,7 @@ class Body(BaseModel):
     text: str
 
 
-# Run "uvicorn --host 0.0.0.0 main:app" to run the app locally
+# Run "uvicorn --host 0.0.0.0 main:app" to run the app locally after rooting to webapp
 @app.get("/")
 def root():
     return HTMLResponse(
